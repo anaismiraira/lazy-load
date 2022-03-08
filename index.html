@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="lib/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Document</title>
+</head>
+<style>
+	body{
+		background-color: lightblue;
+	}
+	img{
+		margin: 20px 0;
+		height: 350px;
+	}
+</style>
+<body>
+	<!-- off-screen images -->
+	<div class="container">
+		<div class="row">
+			<div class="col-6">
+					<img src="images/img1.jpg" alt="img" style="width:100%" loading="lazy">
+					<img src="images/img2.jpg" alt="img" style="width:100%" loading="lazy">
+					<img src="images/img3.jpg" alt="img" style="width:100%" loading="lazy">
+					<img src="images/img4.jpg" alt="img" style="width:100%" loading="lazy">
+					<img src="images/img5.jpg" alt="img" style="width:100%" loading="lazy">
+					<img src="images/img6.jpg" alt="img" style="width:100%" loading="lazy">
+					<img src="images/gal9.jpg" alt="img" style="width:100%" loading="lazy">
+					<img src="images/gal2.jpg" alt="img" style="width:100%" loading="lazy">
+					<img src="images/gal3.jpg" alt="img" style="width:100%" loading="lazy">
+					<img src="images/gal4.jpg" alt="img" style="width:100%" loading="lazy">
+			</div>
+			<div class="col-6">
+					<img src="images/img8.jpg" alt="img" style="width:100%" loading="lazy">
+					<img src="images/img9.jpg" alt="img" style="width:100%" loading="lazy">
+					<img src="images/img10.jpg" alt="img" style="width:100%" loading="lazy">
+					<img src="images/img11.jpg" alt="img" style="width:100%" loading="lazy">
+					<img src="images/img12.jpg" alt="img" style="width:100%" loading="lazy">
+					<img src="images/img13.jpg" alt="img" style="width:100%" loading="lazy">
+					<img src="images/gal5.jpg" alt="img" style="width:100%" loading="lazy">
+					<img src="images/gal6.jpg" alt="img" style="width:100%" loading="lazy">
+					<img src="images/gal7.jpg" alt="img" style="width:100%" loading="lazy">
+					<img src="images/gal8.jpg" alt="img" style="width:100%" loading="lazy">
+			</div>
+		</div>
+	</div>
+
+</body>
+<!-- <script src="lib/lazysizes.min.js" async =""></script> -->
+<script src="index.js" async =""></script>
+<script>
+  if ("loading" in HTMLImageElement.prototype) {
+    console.log("El navegador soporta `lazy-loading`...");
+  } else {
+    console.log("`lazy-loading` no soportado...");
+  }
+</script>
+</html>
